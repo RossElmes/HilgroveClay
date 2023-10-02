@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+width: 100%;
+height:100vh;
+position:relative;
+padding: 0 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.hero-all{
+    width: 100%;
+    height:30vh;
+    position:relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#events{
+justify-content: center;
+width: 100%;
+
+}
+
+
+nav{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 80px;
+}
+
+nav ul li {
+    list-style:none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 20;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    font-size: xx-large;
+}
+
+
+.content{
+    text-align: center;
+}
+
+.membership-content{
+    height: 100%;
+}
+
+table { margin: 20px;
+    border: 5px solid ghostwhite; 
+    height: 100%;
+}
+
+td, th { padding: 0.5em;
+    border-style: none;
+    font-family: Arial, sans-serif; 
+    text-align: left;
+}
+caption { font-family: Verdana, sans-serif;
+     font-weight: bold;
+     font-size: 1.2em;
+     padding-bottom: 0.5em; 
+}
+tr:nth-of-type(even) { background-color: #eaeaea; }
+tr:first-of-type { background-color:darkolivegreen;
+              color: #eaeaea; }
+
+.event-content{
+    text-align: center;
+    height: 200px;
+    display: flex;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    background-color: ghostwhite;
+    margin: 10px;
+}
+
+.event-content:hover{
+    box-shadow: 10px 10px 5px grey;
+}
+
+.event-image{
+    border-radius: 5px;
+}
+
+
+.event-details{
+    text-align: left;
+    width: 80%;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.event-banner-l{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.content-title{
+    text-align: center;
+}
+
+.content-title h1{
+    font-size: 100px;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.content-title a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 70px; 
+    border-radius: 50px;
+    margin-top:20px;
+}
+
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.back-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+.content-title h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color:transparent;
+
+}
+
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom:0;
+    left:0;
+    padding: 20px 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:gray;
+}
+
+.footer-intro{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    padding: 20px 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:gray;
+}
+
+
+.subscribe {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+
+input{
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+    width: 80%;
+}
+
+  .contact-info{
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  .contact-info a{
+  text-decoration: none;
+  display: inline-block;
+  color: gray;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+  .copy{
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+.about-content{
+     display:flex;
+
+}
+
+.about{
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    justify-content: center;
+    background-color: ghostwhite;
+    margin: 2%;
+    border-radius: 20px;
+    border: 2px solid grey;
+}
